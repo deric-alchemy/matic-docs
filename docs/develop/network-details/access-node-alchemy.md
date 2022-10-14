@@ -321,6 +321,8 @@ This guide assumes you already have an [Alchemy account](https://alchemy.com/?r=
 To use Alchemy's products, you need an API key to authenticate your requests.
 
 You can [create API keys from the dashboard](http://dashboard.alchemyapi.io). Check out this video on how to create an app:
+
+
 [block:embed]
 {
   "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FtfggWxfG9o0%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DtfggWxfG9o0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FtfggWxfG9o0%2Fhqdefault.jpg&key=f2aa6fc3595946d0afc3d76cbbd25dc3&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
@@ -330,9 +332,13 @@ You can [create API keys from the dashboard](http://dashboard.alchemyapi.io). Ch
   "image": "https://i.ytimg.com/vi/tfggWxfG9o0/hqdefault.jpg"
 }
 [/block]
+
+
 Or follow the written steps below:
 
 First, navigate to the "create app" button in the "Apps" tab.
+
+
 [block:image]
 {
   "images": [
@@ -349,7 +355,11 @@ First, navigate to the "create app" button in the "Apps" tab.
   ]
 }
 [/block]
+
+
 Fill in the details under "Create App" to get your new key. You can also see apps you previously made and those made by your team here. Pull existing keys by clicking on "View Key" for any app.
+
+
 [block:image]
 {
   "images": [
@@ -365,7 +375,11 @@ Fill in the details under "Create App" to get your new key. You can also see app
   ]
 }
 [/block]
+
+
 You can also pull existing API keys by hovering over "Apps" and selecting one. You can "View Key" here, as well as "Edit App" to whitelist specific domains, see several developer tools, and view analytics.
+
+
 [block:image]
 {
   "images": [
@@ -381,6 +395,8 @@ You can also pull existing API keys by hovering over "Apps" and selecting one. Y
   ]
 }
 [/block]
+
+
 -------------------
 
 ## 2. ✍️ Make Your First Request
@@ -395,6 +411,8 @@ For manual requests, we recommend interacting with the `JSON-RPC` via `POST` req
 * `id`: The ID of your request. Will be returned by the response so you can keep track of which request a response belongs to.
 
 Here is an example you can run from the Terminal/Windows/LINUX command line to retrieve the current gas price:
+
+
 [block:code]
 {
   "codes": [
@@ -413,7 +431,11 @@ Here is an example you can run from the Terminal/Windows/LINUX command line to r
   "title": "Sending requests to apps:"
 }
 [/block]
+
+
 Results:
+
+
 [block:code]
 {
   "codes": [
@@ -425,6 +447,8 @@ Results:
   ]
 }
 [/block]
+
+
 ----------------
 
 ## 3. 🤝 Set up Alchemy as your Client
@@ -432,13 +456,14 @@ Results:
 Want to integrate Alchemy into your production app?
 
 Find out how to set up or switch your current provider to Alchemy by using the Alchemy SDK, the easiest and most powerful way to access Alchemy's suite of Enhanced APIs and tools.
-[block:callout]
-{
-  "type": "danger",
-  "body": "**If you have an existing client,** change your current node provider URL to an Alchemy URL with your API key: \"https://eth-mainnet.alchemyapi.io/v2/your-api-key\"\n\n**Note:** The scripts below need to be run in a **node context** or **saved in a file**, not run from the command line.",
-  "title": "For existing clients:"
-}
-[/block]
+
+:::note
+
+**If you have an existing client,** change your current node provider URL to an Alchemy URL with your API key: \"https://eth-mainnet.alchemyapi.io/v2/your-api-key\"\n\n**Note:** The scripts below need to be run in a **node context** or **saved in a file**, not run from the command line.
+
+:::
+
+
 ### The Alchemy SDK
 
 There are tons of Web3 libraries you can integrate with Alchemy. However, we recommend using the [Alchemy SDK](https://github.com/alchemyplatform/alchemy-sdk-js), a drop-in replacement for Ethers.js, built and configured to work seamlessly with Alchemy. This provides multiple advantages such as automatic retries and robust WebSocket support.
@@ -448,6 +473,8 @@ There are tons of Web3 libraries you can integrate with Alchemy. However, we rec
 To install the Alchemy SDK, you want to create a project, and then navigate to your project directory to run the installation. Let's go ahead and do that! Once we're in our home directory, let's execute the following:
 
 With Yarn:
+
+
 [block:code]
 {
   "codes": [
@@ -459,7 +486,11 @@ With Yarn:
   ]
 }
 [/block]
+
+
 With NPM:
+
+
 [block:code]
 {
   "codes": [
@@ -471,14 +502,15 @@ With NPM:
   ]
 }
 [/block]
+
+
 ### 2. Create a file named `index.js` and add the following contents:
-[block:callout]
-{
-  "type": "info",
-  "title": "Hint",
-  "body": "You should ultimately replace `demo` with your Alchemy HTTP API key."
-}
-[/block]
+
+:::note
+
+You should ultimately replace `demo` with your Alchemy HTTP API key.
+
+:::
 
 [block:code]
 {
@@ -491,9 +523,13 @@ With NPM:
   ]
 }
 [/block]
+
+
 Unfamiliar with the async stuff? Check out this [Medium post](https://betterprogramming.pub/understanding-async-await-in-javascript-1d81bb079b2c).
 
 ### 3. Run it using node
+
+
 [block:code]
 {
   "codes": [
@@ -504,7 +540,11 @@ Unfamiliar with the async stuff? Check out this [Medium post](https://betterprog
   ]
 }
 [/block]
+
+
 ### 4. You should now see the latest <<glossary:block>> number output in your console!
+
+
 [block:code]
 {
   "codes": [
@@ -515,9 +555,13 @@ Unfamiliar with the async stuff? Check out this [Medium post](https://betterprog
   ]
 }
 [/block]
+
+
 Woo! Congrats! You just wrote your first web3 script using Alchemy and sent your first request to your Alchemy API endpoint 🎉
 
 The project associated with your API key should now look like this on the dashboard:
+
+
 [block:image]
 {
   "images": [
@@ -549,6 +593,8 @@ The project associated with your API key should now look like this on the dashbo
   ]
 }
 [/block]
+
+
 ----------------
 
 ## 4. :computer: Start Building!
@@ -573,6 +619,8 @@ Check out the documentation for each library:
 * [Web3.js](https://web3js.readthedocs.io/en/v1.2.9/)
 
 Using the below code snippets, you can install and use Alchemy as a provider via any of the following libraries!
+
+
 [block:code]
 {
   "codes": [
@@ -599,3 +647,5 @@ Using the below code snippets, you can install and use Alchemy as a provider via
   ]
 }
 [/block]
+
+
