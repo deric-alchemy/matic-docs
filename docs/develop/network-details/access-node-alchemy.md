@@ -40,7 +40,9 @@ For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https
 - Check node health with the community
 
 :::note
+
 You have to follow the exact outlined sequence of actions, otherwise you will run into issues.
+
 :::
 
 ### **Install `build-essential`**
@@ -375,6 +377,7 @@ curl https://eth-mainnet.alchemyapi.io/v2/demo \
 ```
 
 :::note
+
 Want to send requests to your own app instead of our public demo?
 
 Replace https://eth-mainnet.alchemyapi.io/jsonrpc/demo with your own API key https://eth-mainnet.alchemyapi.io/v2/your-api-key
