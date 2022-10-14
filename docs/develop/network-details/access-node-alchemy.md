@@ -367,6 +367,9 @@ For manual requests, we recommend interacting with the `JSON-RPC` via `POST` req
 
 Here is an example you can run from the Terminal/Windows/LINUX command line to retrieve the current gas price:
 
+```shell
+curl https://eth-mainnet.alchemyapi.io/v2/demo \\\n-X POST \\\n-H \"Content-Type: application/json\" \\\n-d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_gasPrice\",\"params\":[],\"id\":73}'
+```
 
 [block:code]
 {
