@@ -341,62 +341,15 @@ First, navigate to the "create app" button in the "Apps" tab.
 
 ![img](https://files.readme.io/693457a-Getting_Started.png)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/693457a-Getting_Started.png",
-        "Getting Started.png",
-        3584,
-        1980,
-        "#afbcf4"
-      ],
-      "border": true
-    }
-  ]
-}
-[/block]
-
 
 Fill in the details under "Create App" to get your new key. You can also see apps you previously made and those made by your team here. Pull existing keys by clicking on "View Key" for any app.
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d6172a5-Create_App_Details.png",
-        "Create App Details.png",
-        991,
-        588,
-        "#f6f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+![img](https://files.readme.io/d6172a5-Create_App_Details.png)
 
 
 You can also pull existing API keys by hovering over "Apps" and selecting one. You can "View Key" here, as well as "Edit App" to whitelist specific domains, see several developer tools, and view analytics.
 
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f0dbb19-ezgif.com-gif-maker_1.gif",
-        "ezgif.com-gif-maker (1).gif",
-        600,
-        339,
-        "#9aabf3"
-      ]
-    }
-  ]
-}
-[/block]
+![img](https://files.readme.io/f0dbb19-ezgif.com-gif-maker_1.gif)
 
 
 -------------------
@@ -563,38 +516,9 @@ Woo! Congrats! You just wrote your first web3 script using Alchemy and sent your
 
 The project associated with your API key should now look like this on the dashboard:
 
+![img](https://files.readme.io/e3d2ffd-Alchemy_Tutorial_Result1.png)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e3d2ffd-Alchemy_Tutorial_Result1.png",
-        "Alchemy Tutorial Result1.png",
-        2450,
-        892,
-        "#5577fc"
-      ]
-    }
-  ]
-}
-[/block]
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bcfc9ff-Alchemy_Tutorial_Result2.png",
-        "Alchemy Tutorial Result2.png",
-        2366,
-        422,
-        "#ccd0e6"
-      ]
-    }
-  ]
-}
-[/block]
+![img](https://files.readme.io/bcfc9ff-Alchemy_Tutorial_Result2.png)
 
 
 ----------------
