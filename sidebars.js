@@ -60,6 +60,7 @@ module.exports = {
       },
       items: [
         "develop/network-details/technical-requirements",
+        "develop/network-details/access-node-alchemy",
         "develop/network-details/full-node-deployment",
         "develop/network-details/full-node-binaries",
         "develop/network-details/full-node-docker",
