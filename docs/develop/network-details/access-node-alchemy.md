@@ -1,16 +1,16 @@
 ---
-id: full-node-binaries
-title: Run a full node with Binaries
-description: Deploy a Full Polygon Node using binaries.
+id: access-node-alchemy
+title: Access a Full Node with Alchemy
+description: Make blockchain queries on Polygon using the Alchemy SDK.
 keywords:
   - docs
   - matic
   - polygon
   - node
-  - binaries
-  - deploy
+  - alchemy
+  - alchemy sdk
+  - query 
   - full node
-  - run
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
