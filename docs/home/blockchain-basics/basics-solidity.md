@@ -35,10 +35,16 @@ Essentially the following points need to be kept in mind always:
 - Each write operation has a cost associated with it - you pay it with ether. The cost is measured in gas.
 
 #### Tools for Working With Solidity
-- Truffle: DApp development framework
-- Remix:  Web IDE for Solidity
-- Web3
-- Metamask
+- [Hardhat](https://hardhat.org): DApp development framework
+- [Truffle](https://trufflesuite.com/): DApp development framework
+- [Alchemy SDK](https://docs.alchemy.com/reference/alchemy-sdk-quickstart): Web3 SDK for deploying / reading smart contracts
+- [Remix](https://remix-project.org/):  Web IDE for Solidity
+- [Metamask](https://metamask.io/): Most popular crypto wallet
+
 ### **:scroll:Resources**
 
-:books: [Solidity Docs](https://solidity.readthedocs.io/)
+- [Solidity Docs](https://solidity.readthedocs.io/): Official Solidity Docs
+- [Solidity By Example](https://solidity-by-example.org/): Use short snippets to learn to write Solidity.
+- [Web3 University](https://web3.university): Community-driven hub for smart contract development
+- [Alchemy University](https://university.alchemy.com/): 10-week courses on Web3 / Smart Contract dev.
+
