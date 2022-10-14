@@ -356,7 +356,7 @@ You can also pull existing API keys by hovering over "Apps" and selecting one. Y
 
 ## 2. ✍️ Make Your First Request
 
-You can interact with Alchemy's Ethereum infrastructure provider using JSON-RPC and your [command line](https://www.computerhope.com/jargon/c/commandi.htm).
+You can interact with Alchemy's Polygon infrastructure provider using JSON-RPC and your [command line](https://www.computerhope.com/jargon/c/commandi.htm).
 
 For manual requests, we recommend interacting with the `JSON-RPC` via `POST` requests. Simply pass in the `Content-Type: application/json` header and your query as the `POST` body with the following fields:
 
@@ -374,41 +374,21 @@ curl https://eth-mainnet.alchemyapi.io/v2/demo \
 -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
 ```
 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "curl https://eth-mainnet.alchemyapi.io/v2/demo \\\n-X POST \\\n-H \"Content-Type: application/json\" \\\n-d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_gasPrice\",\"params\":[],\"id\":73}'",
-      "language": "shell"
-    }
-  ]
-}
-[/block]
+:::note
+Want to send requests to your own app instead of our public demo?
 
-[block:callout]
-{
-  "type": "danger",
-  "body": "Want to send requests to your own app instead of our public demo?\n\nReplace https://eth-mainnet.alchemyapi.io/jsonrpc/demo with your own API key https://eth-mainnet.alchemyapi.io/v2/your-api-key",
-  "title": "Sending requests to apps:"
-}
-[/block]
+Replace https://eth-mainnet.alchemyapi.io/jsonrpc/demo with your own API key https://eth-mainnet.alchemyapi.io/v2/your-api-key
 
+:::
 
 Results:
 
 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "{ \"id\": 73,\n  \"jsonrpc\": \"2.0\",\n  \"result\": \"0x09184e72a000\" // 10000000000000 }",
-      "language": "json",
-      "name": "Result"
-    }
-  ]
-}
-[/block]
-
+```json
+{ "id": 73,
+  "jsonrpc": "2.0",
+  "result": "0x09184e72a000" // 10000000000000 }
+```
 
 ----------------
 
@@ -435,34 +415,22 @@ To install the Alchemy SDK, you want to create a project, and then navigate to y
 
 With Yarn:
 
+```console
+mkdir your-project-name
+cd your-project-name
+yarn init # (or yarn init --yes)
+yarn add alchemy-sdk
 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "mkdir your-project-name\ncd your-project-name\nyarn init # (or yarn init --yes)\nyarn add alchemy-sdk",
-      "language": "shell",
-      "name": "Yarn"
-    }
-  ]
-}
-[/block]
-
+```
 
 With NPM:
 
-
-[block:code]
-{
-  "codes": [
-    {
-      "code": "mkdir your-project-name\ncd your-project-name\nnpm init   # (or npm init --yes)\nnpm install alchemy-sdk",
-      "language": "shell",
-      "name": "NPM"
-    }
-  ]
-}
-[/block]
+```console
+mkdir your-project-name
+cd your-project-name
+npm init   # (or npm init --yes)
+npm install alchemy-sdk
+```
 
 
 ### 2. Create a file named `index.js` and add the following contents:
@@ -473,49 +441,41 @@ You should ultimately replace `demo` with your Alchemy HTTP API key.
 
 :::
 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "// Setup: npm install alchemy-sdk\nconst { Network, Alchemy } = require(\"alchemy-sdk\");\n\n// Optional Config object, but defaults to demo api-key and eth-mainnet.\nconst settings = {\n  apiKey: \"demo\", // Replace with your Alchemy API Key.\n  network: Network.ETH_MAINNET, // Replace with your network.\n};\n\nconst alchemy = new Alchemy(settings);\n\nasync function main() {\n  const latestBlock = await alchemy.core.getBlockNumber();\n  console.log(\"The latest block number is\", latestBlock);\n}\n\nmain();",
-      "language": "javascript",
-      "name": "index.js"
-    }
-  ]
+```js
+// Setup: npm install alchemy-sdk
+const { Network, Alchemy } = require("alchemy-sdk");
+
+// Optional Config object, but defaults to demo api-key and eth-mainnet.
+const settings = {
+  apiKey: "demo", // Replace with your Alchemy API Key.
+  network: Network.ETH_MAINNET, // Replace with your network.
+};
+
+const alchemy = new Alchemy(settings);
+
+async function main() {
+  const latestBlock = await alchemy.core.getBlockNumber();
+  console.log("The latest block number is", latestBlock);
 }
-[/block]
+
+main();
+
+```
 
 
 Unfamiliar with the async stuff? Check out this [Medium post](https://betterprogramming.pub/understanding-async-await-in-javascript-1d81bb079b2c).
 
 ### 3. Run it using node
 
-
-[block:code]
-{
-  "codes": [
-    {
-      "code": "node index.js",
-      "language": "shell"
-    }
-  ]
-}
-[/block]
-
+```console
+node index.js
+```
 
 ### 4. You should now see the latest <<glossary:block>> number output in your console!
 
-
-[block:code]
-{
-  "codes": [
-    {
-      "code": "The latest block number is 11043912",
-      "language": "shell"
-    }
-  ]
-}
-[/block]
+```console
+The latest block number is 11043912
+```
 
 
 Woo! Congrats! You just wrote your first web3 script using Alchemy and sent your first request to your Alchemy API endpoint 🎉
@@ -552,32 +512,27 @@ Check out the documentation for each library:
 
 Using the below code snippets, you can install and use Alchemy as a provider via any of the following libraries!
 
+```python
+# Setup: pip install web3
+from web3 import Web3
+alchemy = Web3(Web3.HTTPProvider("https://eth-mainnet.alchemyapi.io/v2/your-api-key"));
 
-[block:code]
-{
-  "codes": [
-    {
-      "code": "# Setup: pip install web3\nfrom web3 import Web3\nalchemy = Web3(Web3.HTTPProvider(\"https://eth-mainnet.alchemyapi.io/v2/your-api-key\"));",
-      "language": "python",
-      "name": "Web3.py"
-    },
-    {
-      "code": "// Setup: curl -L get.web3j.io | sh\nWeb3j web3 = Web3j.build(new HttpService(\"https://eth-mainnet.alchemyapi.io/v2/your-api-key\"));",
-      "language": "java",
-      "name": "Web3j"
-    },
-    {
-      "code": "// Setup: npm install ethers\nconst ethers = require(\"ethers\");\nconst url = \"https://eth-mainnet.alchemyapi.io/v2/your-api-key\";\nconst customHttpProvider = new ethers.providers.JsonRpcProvider(url);",
-      "language": "javascript",
-      "name": "Ethers.js"
-    },
-    {
-      "code": "// Setup: npm install web3\nconst Web3 = require('web3');\nconst web3 = new Web3(\"https://eth-mainnet.alchemyapi.io/v2/your-api-key\");",
-      "language": "javascript",
-      "name": "Web3.js"
-    }
-  ]
-}
-[/block]
+```
 
+```java
+// Setup: curl -L get.web3j.io | sh
+Web3j web3 = Web3j.build(new HttpService("https://eth-mainnet.alchemyapi.io/v2/your-api-key"));
+```
 
+```js
+// Setup: npm install ethers
+const ethers = require("ethers");
+const url = "https://eth-mainnet.alchemyapi.io/v2/your-api-key";
+const customHttpProvider = new ethers.providers.JsonRpcProvider(url);
+```
+
+```js
+// Setup: npm install web3
+const Web3 = require('web3');
+const web3 = new Web3("https://eth-mainnet.alchemyapi.io/v2/your-api-key");
+```
