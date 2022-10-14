@@ -339,6 +339,8 @@ Or follow the written steps below:
 First, navigate to the "create app" button in the "Apps" tab.
 
 
+![img](https://files.readme.io/693457a-Getting_Started.png)
+
 [block:image]
 {
   "images": [
