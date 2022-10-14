@@ -325,7 +325,7 @@ To use Alchemy's products, you need an API key to authenticate your requests.
 You can [create API keys from the dashboard](http://dashboard.alchemyapi.io). Check out this video on how to create an app:
 
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=tfggWxfG9o0)
+[![img](https://i.imgur.com/pXvdWLU.png)](https://www.youtube.com/watch?v=tfggWxfG9o0)
 
 
 [block:embed]
