@@ -43,8 +43,8 @@ Essentially the following points need to be kept in mind always:
 
 ### **:scroll:Resources**
 
-- :books: [Solidity Docs](https://solidity.readthedocs.io/)
+- :books: [Solidity Docs](https://solidity.readthedocs.io/): Official Solidity Docs
 - [Solidity By Example](https://solidity-by-example.org/): Use short snippets to learn to write Solidity.
-- [Web3 University](https://web3.university)
-- [Alchemy University](https://university.alchemy.com/)
+- [Web3 University](https://web3.university): Community-driven hub for smart contract development
+- [Alchemy University](https://university.alchemy.com/): 10-week courses on Web3 / Smart Contract dev.
 
