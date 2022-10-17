@@ -55,23 +55,26 @@ Polygon supports many services you can use to test, compile, debug, and deploy d
 
 You can add Polygon to Metamask or directly use Arkane, which allows you to connect to Polygon using [RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
-:::note
-
-You can use the same RPC with web3.js.
-
-:::
+In order to connect with the Polygon network to read blockchain information, we recommend using the Alchemy SDK.
 
 ```js
 // Javascript
-const Web3 = require('Web3')
+// Setup: npm install alchemy-sdk
+const { Alchemy, Network } = require("alchemy-sdk");
 
-// Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.
-const web3 = new Web3('https://rpc-mumbai.matic.today')
+const settings = {
+  apiKey: "demo", // Can replace with your API Key from https://www.alchemy.com
+  network: Network.MATIC_MAINNET, // Can replace with MATIC_MUMBAI
+};
 
-// Sign up for a free dedicated RPC URL at https://www.alchemy.com or other hosted node providers.
-const web3 = new Web3('https://polygon-mainnet.g.alchemy.com/v2/<your-api-key>')
+const alchemy = new Alchemy(settings);
 
-// web3 object is now connected with Polygon's node
+async function main() {
+  const latestBlock = await alchemy.core.getBlockNumber();
+  console.log("The latest block number is", latestBlock);
+}
+
+main();
 ```
 
 ### **Building a new dApp on Polygon?**
