@@ -86,7 +86,7 @@ access your account.
 On the Avail Explorer, click on the icon next to your account name to
 copy your address.  Alternatively, you can copy the address manually.
 
-<img src={useBaseUrl("img/avail/account-icon.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/avail/account-icon.png")} align= "center" width="100%" height="100%"/> 
 
 Head over to the [Polygon faucet](https://faucet.polygon.technology).
 

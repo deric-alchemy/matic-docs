@@ -1268,4 +1268,83 @@ module.exports = {
     },
     "edge/troubleshooting",
   ],
+
+  polygonid: [
+    "polygonid/overview",
+    {
+      type: "category",
+      label: "Issuer",
+      link: {
+        type: "generated-index"
+      },
+      items: [
+        "polygonid/issuer/issuer-overview"
+      ]
+    },
+    {
+      type: "category",
+      label: "Verifier",
+      link: {
+        type: "generated-index"
+      },
+      items: [
+        "polygonid/verifier/verifier-overview",
+        {
+          type: "category",
+          label: "Off-chain verification",
+          link:{
+            type: "generated-index"
+          },
+          items: [
+            "polygonid/verifier/verification-library/verifier-library-intro",
+            {
+              type: "category",
+              label: "APIs",
+              link:{
+                type: "generated-index"
+              },
+              items: [
+                "polygonid/verifier/verification-library/config",
+                "polygonid/verifier/verification-library/request-api-guide",
+                "polygonid/verifier/verification-library/verification-api-guide",
+                "polygonid/verifier/verification-library/zk-query-language",
+                "polygonid/verifier/verification-library/jwz"
+              ]
+            },
+            "polygonid/verifier/verification-library/verifier-set-up"
+          ]
+        },
+        {
+          type: "category",
+          label: "On-chain verification",
+          link: {
+            type: "generated-index"
+          },
+          items: [
+            "polygonid/verifier/on-chain-verification/overview"
+          ]
+        }
+      ]
+    },
+    {
+      type: "category",
+      label: "Wallet",
+      link: {
+        type: "generated-index"
+      },
+      items: [
+        "polygonid/wallet/wallet-overview"
+      ]
+    },
+    {
+      type: "category",
+      label: "Smart Contracts",
+      link: {
+        type: "generated-index"
+      },
+      items: [
+        "polygonid/contracts/overview"
+      ]
+    }
+  ]
 };

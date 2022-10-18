@@ -20,6 +20,7 @@
   --ifm-h4-font-size: 1rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
+  --docusaurus-highlighted-code-line-bg: rgb(255, 255, 0);
 }
 
 .markdown,
