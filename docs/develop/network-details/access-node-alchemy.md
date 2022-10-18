@@ -40,7 +40,7 @@ This guide assumes you already have an [Alchemy account](https://alchemy.com/?r=
 
 ------------------
 
-## 1.:key: Create an Alchemy Key
+## 1. Create an Alchemy Key
 
 To use Alchemy's products, you need an API key to authenticate your requests.
 
