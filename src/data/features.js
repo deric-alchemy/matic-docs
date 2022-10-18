@@ -104,7 +104,7 @@ export const secondRow = [
     {
         title: "ID",
         status: "Privacy: Docs Coming Soon",
-        linkUrl: "",
+        linkUrl: "docs/polygonid/overview",
         imageUrl: "img/polygon-id.svg",
         description: "A blockchain-native identity and authentication solution"
     },
