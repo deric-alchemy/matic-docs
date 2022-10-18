@@ -26,7 +26,7 @@ _Estimated time to complete this guide: < 10 minutes_
 
 ------------------
 
-## :clipboard: Steps to get started with Alchemy
+## Steps to get started with Alchemy
 
 This guide assumes you already have an [Alchemy account](https://alchemy.com/?r=e68b2f77-7fc7-4ef7-8e9c-cdfea869b9b5) and access to our [Dashboard](https://dashboard.alchemyapi.io).
 
@@ -69,7 +69,7 @@ You can also pull existing API keys by hovering over "Apps" and selecting one. Y
 
 -------------------
 
-## 2. ✍️ Make Your First Request
+## 2. Make Your First Request
 
 You can interact with Alchemy's Polygon infrastructure provider using JSON-RPC and your [command line](https://www.computerhope.com/jargon/c/commandi.htm).
 
