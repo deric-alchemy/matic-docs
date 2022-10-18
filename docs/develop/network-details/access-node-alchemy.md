@@ -32,9 +32,7 @@ _Estimated time to complete this guide: < 10 minutes_
 
 ## Steps to Send Your First Blockchain Request
 
-This guide assumes you already have an [Alchemy account](https://alchemy.com/?r=e68b2f77-7fc7-4ef7-8e9c-cdfea869b9b5) and access to our [Dashboard](https://dashboard.alchemyapi.io).
-
-------------------
+This guide assumes you already have an [Alchemy account](https://alchemy.com/?r=e68b2f77-7fc7-4ef7-8e9c-cdfea869b9b5) and access to the [Alchemy Dashboard](https://dashboard.alchemyapi.io).
 
 ## 1. Create an Alchemy Key
 
@@ -182,7 +180,7 @@ The latest block number is 11043912
 ```
 
 
-Congratulations - you just wrote a working web3 script and sent your first request to your Alchemy API endpoint.
+Excellent - you just wrote a working web3 script and sent your first request to your Alchemy API endpoint.
 
 The project associated with your API key should now look like this on the dashboard:
 
@@ -195,25 +193,22 @@ The project associated with your API key should now look like this on the dashbo
 
 ## 4. Start Building
 
-Don't know where to start? Check out these four tutorials to get more familiar with Alchemy and blockchain development:
+Don't know where to start? Check out these tutorials to get more familiar with Alchemy and blockchain development:
 
 1. [Examples of Common Queries Using the Alchemy SDK](https://docs.alchemy.com/reference/using-the-alchemy-sdk)
 3. Learn [How to Send Transactions on Ethereum](https://docs.alchemy.com/docs/how-to-send-transactions-on-ethereum) 
 4. Try deploying your first [Hello World Smart Contract](https://docs.alchemy.com/docs/hello-world-smart-contract) and get your hands dirty with some solidity programming!
 
-Once you complete this tutorial, let us know how your experience was or if you have any feedback by tagging us on Twitter [@alchemyplatform](https://twitter.com/AlchemyPlatform)!
-
 ----------------
-###Other Web3 Libraries
+### Other Web3 Libraries
 
-There's a number of alternative Web3 libraries other than the Alchemy SDK you may already be using. See the documentation for each library:
-
+There's a number of alternative Web3 libraries other than the Alchemy SDK you may already be using. See the documentation for these libraries below:
 * [Web3.py](https://web3py.readthedocs.io/en/stable/)
 * [Web3j](https://docs.web3j.io)
 * [Ethers.js](https://docs.ethers.io/v5/)
 * [Web3.js](https://web3js.readthedocs.io/en/v1.2.9/)
 
-Using the below code snippets, you can install and use Alchemy as a provider via any of the following libraries!
+Using the below code snippets, you can install and use Alchemy as a provider via any of the following libraries.
 
 ```python
 # Setup: pip install web3
