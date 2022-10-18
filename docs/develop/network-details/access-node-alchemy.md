@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Getting Started
 
-:wave: *New to Alchemy? Get access to Alchemy for free* ***[here](https://alchemy.com/?r=e68b2f77-7fc7-4ef7-8e9c-cdfea869b9b5)***.
+*New to Alchemy? Get access to Alchemy for free* ***[here](https://alchemy.com/?r=e68b2f77-7fc7-4ef7-8e9c-cdfea869b9b5)***.
 
 _Estimated time to complete this guide: < 10 minutes_
 
@@ -30,13 +30,13 @@ _Estimated time to complete this guide: < 10 minutes_
 
 This guide assumes you already have an [Alchemy account](https://alchemy.com/?r=e68b2f77-7fc7-4ef7-8e9c-cdfea869b9b5) and access to our [Dashboard](https://dashboard.alchemyapi.io).
 
-**1**. :key: [Create an Alchemy key](doc:alchemy-quickstart-guide#1key-create-an-alchemy-key)
+**1**. [Create an Alchemy key](doc:alchemy-quickstart-guide#1key-create-an-alchemy-key)
 
-**2**. ✍️ [Make a request](doc:alchemy-quickstart-guide#2-%EF%B8%8F-make-your-first-request)
+**2**. [Make a request](doc:alchemy-quickstart-guide#2-%EF%B8%8F-make-your-first-request)
 
-**3**. 🤝 [Set up Alchemy as your client](doc:alchemy-quickstart-guide/#3-🤝-set-up-alchemy-as-your-client)
+**3**. [Set up Alchemy as your client](doc:alchemy-quickstart-guide/#3-🤝-set-up-alchemy-as-your-client)
 
-4\. :computer:[ Start building!](doc:alchemy-quickstart-guide#4-computer-start-building)
+**4**. [Start building!](doc:alchemy-quickstart-guide#4-computer-start-building)
 
 ------------------
 
@@ -108,7 +108,7 @@ Results:
 
 ----------------
 
-## 3. 🤝 Set up Alchemy as your Client
+## 3. Set up Alchemy as your Client
 
 Want to integrate Alchemy into your production app?
 
@@ -194,7 +194,7 @@ The latest block number is 11043912
 ```
 
 
-Woo! Congrats! You just wrote your first web3 script using Alchemy and sent your first request to your Alchemy API endpoint 🎉
+Congratulations - you just wrote your first web3 script using Alchemy and sent your first request to your Alchemy API endpoint.
 
 The project associated with your API key should now look like this on the dashboard:
 
@@ -205,7 +205,7 @@ The project associated with your API key should now look like this on the dashbo
 
 ----------------
 
-## 4. :computer: Start Building!
+## 4. Start Building
 
 Don't know where to start? Check out these four tutorials to get more familiar with Alchemy and blockchain development:
 
