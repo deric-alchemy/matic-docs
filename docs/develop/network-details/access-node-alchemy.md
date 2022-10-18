@@ -107,7 +107,7 @@ To make blockchain requests directly from your Javascript / Node.js dApp, you'll
 
 :::note
 
-**If you have an existing client such as Web3.js or Ethers.js,** you can just change your current node provider URL to an Alchemy URL with your API key: \"https://eth-mainnet.alchemyapi.io/v2/your-api-key\"\n\n**Note:** The scripts below need to be run in a **node context** or **saved in a file**, not run from the command line.
+**If you have an existing client such as Web3.js or Ethers.js,** you can just change your current node provider URL to an Alchemy URL with your API key: "https://eth-mainnet.alchemyapi.io/v2/your-api-key" **Note:** The scripts below need to be run in a **node context** or **saved in a file**, not run from the command line.
 
 :::
 
