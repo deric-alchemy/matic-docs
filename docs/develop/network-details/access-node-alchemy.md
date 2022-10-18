@@ -173,7 +173,7 @@ Unfamiliar with the async stuff? Check out this [Medium post](https://betterprog
 node index.js
 ```
 
-### 4. You should now see the latest <<glossary:block>> number output in your console!
+### 4. You should now see the latest block number output in your console!
 
 ```console
 The latest block number is 11043912
