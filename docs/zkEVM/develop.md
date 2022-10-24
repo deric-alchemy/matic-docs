@@ -11,6 +11,8 @@ keywords:
   - efficiency
   - develop
   - zkEVM
+  - public testnet
+  - deploy on zkEVM
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
@@ -35,12 +37,12 @@ Developers will be able to deploy their existing contracts to the zkEVM, and Use
 In order to add the **Polygon zkEVM** network to your wallet, you will need to enter the following details:
 
 - **Network Name**: Polygon zkEVM Testnet
-- **RPC URL**: [https://public.zkevm-test.net:2083](https://public.zkevm-test.net:2083)
+- **RPC URL**: [https://rpc.public.zkevm-test.net](https://rpc.public.zkevm-test.net)
 - **Chain ID**: 1402
 - **Currency Symbol**: ETH
-- **Block Explorer URL**: [https://public.zkevm-test.net:8443](https://public.zkevm-test.net:8443)
+- **Block Explorer URL**: [https://explorer.public.zkevm-test.net](https://explorer.public.zkevm-test.net)
 
-Also, for moving assets across chains, you will need to use the zkEVM Bridge. The bridge is available on [https://public.zkevm-test.net/](https://public.zkevm-test.net/).
+Also, for moving assets across chains, you will need to use the zkEVM Bridge. The bridge interface is available on [https://public.zkevm-test.net/](https://public.zkevm-test.net/). The Bridge API (for developers) is available at [https://bridge-api.public.zkevm-test.net/](https://bridge-api.public.zkevm-test.net/)
 
 Check out this video tutorial on how to add Polygon zkEVM Testnet to Metamask and deploy smart contracts:
 

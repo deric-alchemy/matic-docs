@@ -32,7 +32,26 @@ The `--json` flag is supported on some commands. This flag instructs the command
 
 ### server flags
 
-<h4><i>seal</i></h4>
+
+| **All server flags**                                                                        |
+|---------------------------------------|---------------------------------------------|
+| [seal](/docs/edge/get-started/cli-commands#seal) | [data-dir](/docs/edge/get-started/cli-commands#data-dir) |
+| [jsonrpc](/docs/edge/get-started/cli-commands#jsonrpc) | [json-rpc-block-range-limit](/docs/edge/get-started/cli-commands#json-rpc-block-range-limit) |
+[grpc](/docs/edge/get-started/cli-commands#grpc) | [libp2p](/docs/edge/get-started/cli-commands#libp2p) |
+| [prometheus](/docs/edge/get-started/cli-commands#prometheus) | [block-gas-target](/docs/edge/get-started/cli-commands#block-gas-target) |
+| [max-peers](/docs/edge/get-started/cli-commands#max-peers) | [max-inbound-peers](/docs/edge/get-started/cli-commands#max-inbound-peers) |
+| [max-outbound-peers](/docs/edge/get-started/cli-commands#max-outbound-peers) | [max-enqueued](/docs/edge/get-started/cli-commands#max-enqueued) |
+| [log-level](/docs/edge/get-started/cli-commands#log-level) | [log-to](/docs/edge/get-started/cli-commands#log-to) |
+| [chain](/docs/edge/get-started/cli-commands#chain) | [join](/docs/edge/get-started/cli-commands#join) |
+| [nat](/docs/edge/get-started/cli-commands#nat) | [dns](/docs/edge/get-started/cli-commands#dns) |
+| [price-limit](/docs/edge/get-started/cli-commands#price-limit) | [max-slots](/docs/edge/get-started/cli-commands#max-slots) | [config](/docs/edge/get-started/cli-commands#config) |
+| [secrets-config](/docs/edge/get-started/cli-commands#secrets-config) | [dev](/docs/edge/get-started/cli-commands#dev) |
+| [dev-interval](/docs/edge/get-started/cli-commands#dev-interval) | [no-discover](/docs/edge/get-started/cli-commands#no-discover) | [restore](/docs/edge/get-started/cli-commands#restore) |
+| [block-time](/docs/edge/get-started/cli-commands#block-time) | [access-control-allow-origins](/docs/edge/get-started/cli-commands#access-control-allow-origins) |
+
+
+
+#### <h4><i>seal</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -51,7 +70,7 @@ Sets the flag indicating that the client should seal blocks. Default: `true`.
 
 ---
 
-<h4><i>data-dir</i></h4>
+#### <h4><i>data-dir</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -71,7 +90,7 @@ Used to specify the data directory used for storing Polygon Edge client data. De
 ---
 
 
-<h4><i>jsonrpc</i></h4>
+#### <h4><i>jsonrpc</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -93,7 +112,7 @@ Default address: `0.0.0.0:8545`.
 
 ---
 
-<h4><i>json-rpc-block-range-limit</i></h4>
+#### <h4><i>json-rpc-block-range-limit</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -112,7 +131,7 @@ Sets the maximum block range to be considered when executing json-rpc requests t
 
 ---
 
-<h4><i>json-rpc-batch-request-limit</i></h4>
+#### <h4><i>json-rpc-batch-request-limit</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -131,7 +150,7 @@ Sets the maximum length to be considered when handling json-rpc batch requests. 
 
 ---
 
-<h4><i>grpc</i></h4>
+#### <h4><i>grpc</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -150,7 +169,7 @@ Sets the address and port for the gRPC service `address:port`. Default address: 
 
 ---
 
-<h4><i>libp2p</i></h4>
+#### <h4><i>libp2p</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -169,7 +188,7 @@ Sets the address and port for the libp2p service `address:port`. Default address
 
 ---
 
-<h4><i>prometheus</i></h4>
+#### <h4><i>prometheus</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -190,7 +209,7 @@ If omitted the service will not be started.
 
 ---
 
-<h4><i>block-gas-target</i></h4>
+#### <h4><i>block-gas-target</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -211,7 +230,7 @@ A more detailed explanation on the block gas target can be found in the [TxPool 
 
 ---
 
-<h4><i>max-peers</i></h4>
+#### <h4><i>max-peers</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -232,7 +251,7 @@ Peer limit should be specified either by using `max-peers` or `max-inbound/outbo
 
 ---
 
-<h4><i>max-inbound-peers</i></h4>
+#### <h4><i>max-inbound-peers</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -253,7 +272,7 @@ Sets the client's maximum inbound peer count. If `max-peers` is set, max-inbound
 
 ---
 
-<h4><i>max-outbound-peers</i></h4>
+#### <h4><i>max-outbound-peers</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -274,7 +293,7 @@ Sets the client's maximum outbound peer count. If `max-peers` is set, max-outbou
 
 ---
 
-<h4><i>max-enqueued</i></h4>
+#### <h4><i>max-enqueued</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -293,7 +312,7 @@ Sets the maximum number of enqueued transactions per account. Default:`128`.
 
 ---
 
-<h4><i>log-level</i></h4>
+#### <h4><i>log-level</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -312,7 +331,7 @@ Sets the log level for console output. Default: `INFO`.
 
 ---
 
-<h4><i>log-to</i></h4>
+#### <h4><i>log-to</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -333,7 +352,7 @@ but if the flag is set, there will be no output to the console when running serv
 
 ---
 
-<h4><i>chain</i></h4>
+#### <h4><i>chain</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -352,7 +371,7 @@ Specifies the genesis file used for starting the chain. Default: `./genesis.json
 
 ---
 
-<h4><i>join</i></h4>
+#### <h4><i>join</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -371,7 +390,7 @@ Specifies the address of the peer that should be joined.
 
 ---
 
-<h4><i>nat</i></h4>
+#### <h4><i>nat</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -390,7 +409,7 @@ Sets the external IP address without the port, as it can be seen by peers.
 
 ---
 
-<h4><i>dns</i></h4>
+#### <h4><i>dns</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -409,9 +428,7 @@ Sets the host DNS address. This can be used to advertise an external DNS. Suppor
 
 ---
 
-<h4>
-  <i>price-limit</i>
-</h4>
+#### <h4><i>price-limit</i></h4>
 
 
 <Tabs>
@@ -431,9 +448,7 @@ Sets minimum gas price limit to enforce for acceptance into the pool. Default: `
 
 ---
 
-<h4>
-  <i>max-slots</i>
-</h4>
+#### <h4><i>max-slots</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -452,7 +467,7 @@ Sets maximum slots in the pool. Default: `4096`.
 
 ---
 
-<h4><i>config</i></h4>
+#### <h4><i>config</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -471,7 +486,7 @@ Specifies the path to the CLI config. Supports `.json`.
 
 ---
 
-<h4><i>secrets-config</i></h4>
+#### <h4><i>secrets-config</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -490,7 +505,7 @@ Sets the path to the SecretsManager config file. Used for Hashicorp Vault, AWS S
 
 ---
 
-<h4><i>dev</i></h4>
+#### <h4><i>dev</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -509,7 +524,7 @@ Sets the client to dev mode. Default: `false`.
 
 ---
 
-<h4><i>dev-interval</i></h4>
+#### <h4><i>dev-interval</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -528,7 +543,7 @@ Sets the client's dev notification interval in seconds. Default: `0`.
 
 ---
 
-<h4><i>no-discover</i></h4>
+#### <h4><i>no-discover</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -547,7 +562,7 @@ Prevents the client from discovering other peers. Default: `false`.
 
 ---
 
-<h4><i>restore</i></h4>
+#### <h4><i>restore</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -566,7 +581,7 @@ Restore blocks from the specified archive file
 
 ---
 
-<h4><i>block-time</i></h4>
+#### <h4><i>block-time</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -585,7 +600,7 @@ Sets block production time in seconds. Default: `2`
 
 ---
 
-<h4><i>access-control-allow-origins</i></h4>
+#### <h4><i>access-control-allow-origins</i></h4>
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
 
@@ -606,8 +621,18 @@ If omitted Access-Control-Allow-Origins header will be set to `*` and all domain
 ---
 
 ### genesis flags
+| **All genesis flags**                                                                        |
+|---------------------------------------|---------------------------------------------|
+| [dir](/docs/edge/get-started/cli-commands#dir) | [name](/docs/edge/get-started/cli-commands#name) |
+| [pos](/docs/edge/get-started/cli-commands#pos) | [epoch-size](/docs/edge/get-started/cli-commands#epoch-size) |
+| [premine](/docs/edge/get-started/cli-commands#premine) | [chainid](/docs/edge/get-started/cli-commands#chainid) |
+| [ibft-validator-type](/docs/edge/get-started/cli-commands#ibft-validator-type) | [ibft-validators-prefix-path](/docs/edge/get-started/cli-commands#ibft-validators-prefix-path) |
+| [ibft-validator](/docs/edge/get-started/cli-commands#ibft-validator) | [block-gas-limit](/docs/edge/get-started/cli-commands#block-gas-limit) |
+| [consensus](/docs/edge/get-started/cli-commands#consensus) | [bootnode](/docs/edge/get-started/cli-commands#bootnode) |
+| [max-validator-count](/docs/edge/get-started/cli-commands#max-validator-count) | [min-validator-count](/docs/edge/get-started/cli-commands#min-validator-count) |
 
-<h4><i>dir</i></h4>
+
+#### <h4><i>dir</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -626,7 +651,7 @@ Sets the directory for the Polygon Edge genesis data. Default: `./genesis.json`.
 
 ---
 
-<h4><i>name</i></h4>
+#### <h4><i>name</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -645,7 +670,7 @@ Sets the name for the chain. Default: `polyton-edge`.
 
 ---
 
-<h4><i>pos</i></h4>
+#### <h4><i>pos</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -665,7 +690,7 @@ Defaults to Proof of Authority if flag is not provided or `false`.
 
 ---
 
-<h4><i>epoch-size</i></h4>
+#### <h4><i>epoch-size</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -684,7 +709,7 @@ Sets the epoch size for the chain. Default `100000`.
 
 ---
 
-<h4><i>premine</i></h4>
+#### <h4><i>premine</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -705,7 +730,7 @@ Default premined balance: `0xD3C21BCECCEDA1000000`(1 million native currency tok
 
 ---
 
-<h4><i>chainid</i></h4>
+#### <h4><i>chainid</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -724,7 +749,7 @@ Sets the ID of the chain. Default: `100`.
 
 ---
 
-<h4><i>ibft-validator-type</i></h4>
+#### <h4><i>ibft-validator-type</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -743,7 +768,7 @@ Specifies the validation mode of block headers. Possible values: `[ecdsa, bls]`.
 
 ---
 
-<h4><i>ibft-validators-prefix-path</i></h4>
+#### <h4><i>ibft-validators-prefix-path</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -762,7 +787,7 @@ Prefix path for validator folder directory. Needs to be present if the flag `ibf
 
 ---
 
-<h4><i>ibft-validator</i></h4>
+#### <h4><i>ibft-validator</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -783,7 +808,7 @@ Sets passed addresses as IBFT validators. Needs to be present if the flag `ibft-
 
 ---
 
-<h4><i>block-gas-limit</i></h4>
+#### <h4><i>block-gas-limit</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -802,7 +827,7 @@ Refers to the maximum amount of gas used by all operations in a block. Default: 
 
 ---
 
-<h4><i>consensus</i></h4>
+#### <h4><i>consensus</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -821,7 +846,7 @@ Sets consensus protocol. Default: `pow`.
 
 ---
 
-<h4><i>bootnode</i></h4>
+#### <h4><i>bootnode</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -841,7 +866,7 @@ Instead of an IP address, the DNS address of the bootnode can be provided.
 
 ---
 
-<h4><i>max-validator-count</i></h4>
+#### <h4><i>max-validator-count</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
@@ -861,7 +886,7 @@ This number cannot exceed the value of MAX_SAFE_INTEGER (2^53 - 2).
 
 ---
 
-<h4><i>min-validator-count</i></h4>
+#### <h4><i>min-validator-count</i></h4>
 
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>

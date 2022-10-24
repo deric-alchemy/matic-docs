@@ -22,7 +22,8 @@ Polygon has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/do
 
 This subgraph can be used to query on-chain Polygon data. The subgraph data is serviced by a decentralized group of server operators called [Indexers](https://thegraph.com/docs/en/network/indexing/).
 
-Subgraph information is serviced by a decentralized group of server operators called Indexers.
+The PolygonRoot subgraph works by listening for events emitted by one or more data sources (Smart Contracts) on the various chains. It handles the indexing and caching of data which can later be queried using the GraphQL API Endpoint, providing an excellent developer experience.
+
 
 ## Helpful Resources
 

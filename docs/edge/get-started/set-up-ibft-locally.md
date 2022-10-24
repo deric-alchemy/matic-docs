@@ -152,6 +152,14 @@ What this command does:
 
 The result of this command is the `genesis.json` file which contains the genesis block of our new blockchain, with the predefined validator set and the configuration for which node to contact first in order to establish connectivity.
 
+:::info Switch to ECDSA
+
+BLS is the default validation mode of block headers. If you want your chain to run in ECDSA mode, you can use use the flag `—ibft-validator-type`, with the argument `ecdsa`:
+
+```
+genesis --ibft-validator-type ecdsa
+```
+:::
 :::info Premining account balances
 
 You will probably want to set up your blockchain network with some addresses having "premined" balances.

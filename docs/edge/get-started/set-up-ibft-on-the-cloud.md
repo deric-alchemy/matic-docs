@@ -158,7 +158,7 @@ Node ID              = 16Uiu2HAmVZnsqvTwuzC9Jd4iycpdnHdyVZJZTpVC8QuRSKmZdUrf
 Given that you have received all 4 of the validators' public keys, you can run the following command to generate the `genesis.json`
 
 ````bash
-polygon-edge genesis --consensus ibft --ibft-validator=0xC12bB5d97A35c6919aC77C709d55F6aa60436900 --ibft-validator=<2nd_validator_pubkey> --ibft-validator=<3rd_validator_pubkey> --ibft-validator=<4th_validator_pubkey> --bootnode=<first_bootnode_multiaddr_connection_string_from_step_2> --bootnode <second_bootnode_multiaddr_connection_string_from_step_2> --bootnode <optionally_more_bootnodes>
+polygon-edge genesis --consensus ibft --ibft-validator 0xC12bB5d97A35c6919aC77C709d55F6aa60436900:0x9952735ca14734955e114a62e4c26a90bce42b4627a393418372968fa36e73a0ef8db68bba11ea967ff883e429b3bfdf --ibft-validator <2nd validator IBFT public key>:<2nd validator BLS public key> --ibft-validator <3rd validator IBFT public key>:<3rd validator BLS public key> --ibft-validator <4th validator IBFT public key>:<4th validator BLS public key> --bootnode=<first_bootnode_multiaddr_connection_string_from_step_2> --bootnode <second_bootnode_multiaddr_connection_string_from_step_2> --bootnode <optionally_more_bootnodes>
 ````
 
 What this command does:
@@ -166,6 +166,15 @@ What this command does:
 * The `--ibft-validator` sets the public key of the validator that should be included in the initial validator set in the genesis block. There can be many initial validators.
 * The `--bootnode` sets the address of the bootnode that will enable the nodes to find each other.
   We will use the multiaddr string of the `node 1`, as mentioned in **step 2**, although you can add as many bootnodes as you want, as displayed above.
+
+:::info Switch to ECDSA
+
+BLS is the default validation mode of block headers. If you want your chain to run in ECDSA mode, you can use use the flag `—ibft-validator-type`, with the argument `ecdsa`:
+
+```
+genesis --ibft-validator-type ecdsa
+```
+:::
 
 :::info Premining account balances
 
