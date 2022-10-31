@@ -77,11 +77,12 @@ polygon-edge secrets init --data-dir test-chain-4
 
 Each of these commands will print the validator key, bls public key and the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need the Node ID of the first node for the next step.
 
-:::warning Save the BLS public key
+### Outputting Secrets 
+The secrets output can be retrieved again, if needed.
 
-If the network is running with BLS, which it is by default, the BLS public key is required for proposing in the PoA mode and for staking in the PoS mode. Polygon Edge only saves the BLS private key, it is the responsibility of the user to preserve the BLS public key.
-
-:::
+```bash
+polygon-edge secrets output --data-dir test-chain-4
+```
 
 ## Step 2: Prepare the multiaddr connection string for the bootnode
 
@@ -365,7 +366,7 @@ Example:
 ````bash
 polygon-edge server --config ./test/config-node1.json
 ````
-Currently, we only support `json` based configuration file, sample config file can be found **[here](/docs/edge/configuration/sample-config)**
+Currently, we support `yaml` and `json` based configuration files, sample config files can be found **[here](/docs/edge/configuration/sample-config)**
 
 :::
 

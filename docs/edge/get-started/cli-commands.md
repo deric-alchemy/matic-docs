@@ -1667,6 +1667,7 @@ Address of the gRPC API. Default: `127.0.0.1:9632`.
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | secrets init      | Initializes the private keys to the corresponding secrets manager                                                         |
 | secrets generate         | Generates a secrets manager configuration file which can be parsed by the Polygon Edge    |
+| secrets output    | Prints the BLS public key address, validator public key address, and node id for reference |
 
 ### secrets init flags
 
@@ -1876,6 +1877,101 @@ Specifies the name of the node for on-service record keeping. Default: `polygon-
 </Tabs>
 
 Specifies the namespace used for the Hashicorp Vault secrets manager. Default: `admin`
+
+### secrets output flags
+
+<h4><i>bls</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    secrets output [--bls FLAG]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    secrets output --bls
+
+  </TabItem>
+</Tabs>
+
+Sets the flag indicating whether to only output the BLS public key. Default: `true`
+
+---
+
+<h4><i>config</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    secrets output [--config SECRETS_CONFIG]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    secrets output --config ./secretsManagerConfig.json
+
+  </TabItem>
+</Tabs>
+
+Sets the path to the SecretsManager config file. If omitted, the local FS secrets manager is used.
+
+---
+
+<h4><i>data-dir</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    secrets output [--data-dir DATA_DIRECTORY]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    secrets output --data-dir ./example-dir
+
+  </TabItem>
+</Tabs>
+
+Sets the directory for the Polygon Edge data if the local FS is used.
+
+---
+
+<h4><i>node-id</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    secrets output [--node-id FLAG]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    secrets output --node-id
+
+  </TabItem>
+</Tabs>
+
+Sets the flag indicating whether to only output the network node ID. Default: `true`
+
+---
+
+<h4><i>validator</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    secrets output [--validator FLAG]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    secrets output --validator
+
+  </TabItem>
+</Tabs>
+
+Sets the flag indicating whether to only output the validator address. Default: `true`
 
 ---
 

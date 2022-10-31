@@ -980,8 +980,8 @@ module.exports = {
   ],
   
   zkEVM: [
-    "zkEVM/overview",
     "zkEVM/develop",
+    "zkEVM/overview",
     "zkEVM/proof-of-efficiency",
     "zkEVM/zkNode",
     "zkEVM/Architecture/zkProver",
@@ -1064,12 +1064,41 @@ module.exports = {
       items: [
         "nightfall/tools/nightfall-wallet",
         "nightfall/tools/explorer",
-        "nightfall/tools/nightfall-sdk",
+        {
+          type: "category",
+          label: "SDK",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "nightfall/tools/nightfall-sdk",
+            {
+              type: "category",
+              label: "User SDK",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "nightfall/tools/user-sdk-getting-started",
+                "nightfall/tools/user-sdk-installation",
+                "nightfall/tools/user-sdk-api",
+                "nightfall/tools/user-sdk-examples",
+              ],
+            },
+            {
+              type: "category",
+              label: "Proposer SDK",
+              link: {
+                type: "generated-index",
+              },
+              items: ["nightfall/tools/proposer-sdk-installation"],
+            },
+          ],
+        },
       ],
     },
     "nightfall/faq/faq",
   ],
-
   faq: [
     "faq/general-faq",
     "faq/technical-faqs",

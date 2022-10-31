@@ -80,11 +80,12 @@ node-4> polygon-edge secrets init --data-dir data-dir
 
 Each of these commands will print the validator key, bls public key and the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need the Node ID of the first node for the next step.
 
-:::warning Save BLS public key
+### Outputting Secrets 
+The secrets output can be retrieved again, if needed.
 
-If the network is running with BLS, which it does by default, the BLS public key is required for proposing in the PoA mode and for staking in the PoS mode. Polygon Edge only saves BLS private key, it is your responsibility to preserve BLS public key.
-
-:::
+```bash
+polygon-edge secrets output --data-dir test-chain-4
+```
 
 :::warning Keep your data directory to yourself!
 

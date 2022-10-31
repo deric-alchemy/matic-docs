@@ -83,7 +83,7 @@ export const secondRow = [
     {
         title: "zkEVM",
         status: "ZK Rollup",
-        linkUrl: "docs/zkEVM/overview",
+        linkUrl: "docs/zkEVM/develop",
         imageUrl: "img/hermez.svg",
         description: "The first open-source ZK rollup with security of Ethereum and full EVM opcode equivalence"
     },

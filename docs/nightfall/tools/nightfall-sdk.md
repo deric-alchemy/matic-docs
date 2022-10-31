@@ -1,8 +1,8 @@
 ---
 id: nightfall-sdk
-title: SDK
-sidebar_label: SDK
-description: "Nightfall SDK"
+title: SDK Overview
+sidebar_label: Overview
+description: Nightfall SDK Overview
 keywords:
   - docs
   - polygon
@@ -12,25 +12,26 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 ## What is Nightfall SDK
-Nightfall SDK is a Software Development Kit created for interacting with Polygon Nightfall. It grants developers an easy access to the Nightfall Protocol oppening numerous possibilities to use accross any applications.
+
+Nightfall SDK is a Software Development Kit created for interacting with Polygon Nightfall. It grants developers an easy access to the Nightfall Protocol opening numerous possibilities to use accross any applications.
 
 ## SDK overview
-The SDK provides the ablity to interact to the core features of the Nightfall Protocol:
-- Deposit ERC20 tokens from Ethereum L1 to Polygon Nightfall L2
-- Transfer ERC20 token commitments on Polygon Nightfall L2
-- Withdraw ERC20 token commitments from Polygon Nightfall L2 to Ethereum L1
-- Check ERC20 balances on Polygon Nightfall L2
-- Safely export and import ERC20 transaction commitments from and to Polygon Nightfall L2
 
+The SDK provides the ablity to interact with the core features of the Nightfall Protocol:
 
-## Getting started
-To setup Nightfall and the SDK visit [Nightfall SDK Github](https://github.com/maticnetwork/nightfall-sdk#requirements).
-A step by step guide on how to use it can be found there.
+- Deposit ERC20, ERC721 and ERC1155 tokens from Ethereum L1 to Polygon Nightfall L2
+- Transfer ERC20, ERC721 and ERC1155 token commitments on Polygon Nightfall L2
+- Withdraw ERC20, ERC721 and ERC1155 token commitments from Polygon Nightfall L2 to Ethereum L1
+- Check token balances on Polygon Nightfall L2
+- Safely export and import token transaction commitments to and from Polygon Nightfall L2
 
-## Example Scripts
-To get a better understanding of the power of the Nightfall Protocol, we have provided example scripts within the SDK. These scripts are a great way to get started. They are a practical examples on how to use the SDK and what can you achieve with it. Running them locally gives the opportunity of understanding Nigtfall and what it does in the background.
+To learn more about how all these functionalities are working on a Protocol level, you can head to the [Protocol Docs](/docs/nightfall/protocol/actors).
+
+## Play around with the SDK repo
+
+If you want to experiment beyond the NPM package, we have provided example scripts within the SDK repository. These scripts are a great way to get started if you get stuck dealing with the NPM package. They are practical examples on how to use the SDK, using the core functionalities. Running them locally gives the opportunity of understanding Nigtfall and how it works under the hood.
 Explanation and running instructions can be found on the following [link](https://github.com/maticnetwork/nightfall-sdk#example-scripts).
 
 ### Need help?
-If you have any questions or need some help, join the [Polygon Nightfall discord server](https://discord.com/invite/pZkC3JV2bR).
 
+If you have any questions or need some help, join the [Polygon Nightfall discord server](https://discord.com/invite/pZkC3JV2bR).

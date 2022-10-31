@@ -2,7 +2,7 @@
 id: transactions
 title: What are Transactions?
 sidebar_label: Transactions
-description: "Sending messages betwen accounts."
+description: "Sending messages between accounts."
 keywords:
   - docs
   - matic

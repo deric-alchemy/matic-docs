@@ -437,7 +437,7 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           remarkPlugins: [math],
-          rehypePlugins: [katex],
+          rehypePlugins: [[katex, {strict: false, throwOnError: true,globalGroup: true}]],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
