@@ -20,7 +20,6 @@ Most blockchain interactions involve reading its state.
 
 Alchemy offers a reference guide on how to make basic requests to the blockchain.
 Check out their guide on [how  to query Polygon](https://docs.alchemy.com/reference/polygon-sdk-examples).
-* [How to Query the Polygon Blockchain](https://docs.alchemy.com/reference/polygon-sdk-examples)
 
 ## Deploy Smart Contracts
 
