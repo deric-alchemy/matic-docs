@@ -18,7 +18,8 @@ Polygon is a scaling solution for public blockchains. Polygon PoS supports all t
 ## Query the Blockchain
 80% of web3 developers don't need to write a single smart contract - instead, most interaction with the blockchain involves reading its current state.
 
-If you're in that 80%, here are some examples on how to make basic requests to the blockchain.
+Alchemy offers a reference guide on how to make basic requests to the blockchain.
+Check out their guide on [how  to query Polygon](https://docs.alchemy.com/reference/polygon-sdk-examples).
 * [How to Query the Polygon Blockchain](https://docs.alchemy.com/reference/polygon-sdk-examples)
 
 ## Deploy Smart Contracts
