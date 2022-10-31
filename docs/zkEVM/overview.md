@@ -1,8 +1,8 @@
 ---
 id: overview
-title: Polygon zkEVM
-sidebar_label: Overview
-description: "Introduction to Polygon zkEVM"
+title: Polygon zkEVM Architecture
+sidebar_label: Architecture
+description: "Introduction to Polygon zkEVM and it's architecture"
 keywords:
   - docs
   - zk rollups
@@ -11,10 +11,12 @@ keywords:
   - efficiency
   - hermez
   - zkEVM
+  - polygon zkEVM
+  - architecture
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-# **Polygon zkEVM**
+# **Polygon zkEVM Architecture**
 
 :::info
 

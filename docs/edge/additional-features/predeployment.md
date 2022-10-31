@@ -26,6 +26,10 @@ This is where predeployment comes in. Polygon Edge allows users to specify Solid
 present in the blockchain from block `1`, and not have to worry about orchestrating deployments as soon as the chain is
 running.
 
+## Video presentation
+
+[![smart contract predeployment- video](https://img.youtube.com/vi/ZyTEYzWfn8s/0.jpg)](https://www.youtube.com/watch?v=ZyTEYzWfn8s)
+
 ## How do I predeploy a Smart Contract?
 
 Let's say that you have the following Smart Contract in Solidity:

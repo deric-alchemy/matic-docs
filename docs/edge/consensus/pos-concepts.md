@@ -21,7 +21,7 @@ giving node operators the ability to easily choose between the two when starting
 ## PoS Features
 
 The core logic behind the Proof of Stake implementation is situated within
-the [Staking Smart Contract](https://github.com/0xPolygon/staking-contracts/blob/main/contracts/staking.sol).
+the [Staking Smart Contract](https://github.com/0xPolygon/staking-contracts/blob/main/contracts/Staking.sol).
 
 This contract is pre-deployed whenever a PoS mechanism Polygon Edge chain is initialized, and is available on the address
 `0x0000000000000000000000000000000000001001` from block `0`.

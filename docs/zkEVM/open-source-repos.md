@@ -1,19 +1,22 @@
 ---
 id: open-source-repos
-title: Open Source Repos
-sidebar_label: Open Source Repos
-description: "Repositories related to zkEVM"
+title: Source Code
+sidebar_label: Source Code
+description: Github source code repositories related to Polygon zkEVM
 keywords:
   - docs
   - polygon
   - repository
-  - open source
+  - source code
+  - github
+  - zkevm
+  - zkprover
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-# **Open Source Repositories**
+# **Source Code Repositories**
 
-This document provides the complete list of all open source repositories related to Polygon zkEVM and its components. Feel free to check out the [Polygon zkEVM](https://github.com/0xPolygonHermez) organization on Github.
+This document provides the complete list of all available source code repositories related to Polygon zkEVM and its components including the zkProver. Feel free to check out the [Polygon zkEVM](https://github.com/0xPolygonHermez) organization on Github.
 
 ## **Core repositories**
 
